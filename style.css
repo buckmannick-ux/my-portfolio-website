@@ -1,0 +1,982 @@
+/* ===================================
+   Nick Buckman Portfolio
+   Global Styles
+=================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#F8FAFC;
+
+color:#1E293B;
+
+line-height:1.7;
+
+overflow-x:hidden;
+
+}
+
+/* ==========================
+Container
+========================== */
+
+.container{
+
+width:min(1100px,90%);
+
+margin:auto;
+
+}
+
+/* ==========================
+Navigation
+========================== */
+
+.navbar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 8%;
+
+background:rgba(15,23,42,.95);
+
+backdrop-filter:blur(10px);
+
+z-index:1000;
+
+box-shadow:0 2px 15px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+font-size:1.5rem;
+
+font-weight:700;
+
+color:white;
+
+letter-spacing:1px;
+
+}
+
+.nav-links{
+
+display:flex;
+
+gap:35px;
+
+list-style:none;
+
+}
+
+.nav-links a{
+
+text-decoration:none;
+
+color:white;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+color:#38BDF8;
+
+}
+
+/* ==========================
+Hero
+========================== */
+
+.hero{
+
+min-height:100vh;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+align-items:center;
+
+gap:80px;
+
+padding:120px 8% 80px;
+
+background:linear-gradient(
+135deg,
+#0F172A,
+#1E3A8A);
+
+color:white;
+
+}
+
+.hero h1{
+
+font-size:3.5rem;
+
+margin-bottom:15px;
+
+}
+
+.hero h1 span{
+
+color:#38BDF8;
+
+}
+
+.hero h2{
+
+font-size:1.6rem;
+
+font-weight:500;
+
+margin-bottom:25px;
+
+color:#CBD5E1;
+
+}
+
+.hero p{
+
+font-size:1.05rem;
+
+max-width:600px;
+
+margin-bottom:35px;
+
+}
+
+.hero-image{
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.hero-image img{
+
+width:360px;
+
+height:360px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:8px solid white;
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.25);
+
+transition:.4s;
+
+}
+
+.hero-image img:hover{
+
+transform:scale(1.03);
+
+}
+
+/* ==========================
+Buttons
+========================== */
+
+.hero-buttons{
+
+display:flex;
+
+gap:20px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:14px 30px;
+
+background:#2563EB;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+background:#1D4ED8;
+
+}
+
+.btn.secondary{
+
+background:white;
+
+color:#0F172A;
+
+}
+
+.btn.secondary:hover{
+
+background:#E2E8F0;
+
+}
+
+/* ==========================
+Statistics
+========================== */
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+width:min(1100px,90%);
+
+margin:70px auto;
+
+}
+
+.stat{
+
+background:white;
+
+padding:40px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.stat:hover{
+
+transform:translateY(-10px);
+
+}
+
+.stat h2{
+
+font-size:2.3rem;
+
+color:#2563EB;
+
+margin-bottom:10px;
+
+}
+
+.stat p{
+
+font-size:.95rem;
+
+color:#64748B;
+
+}
+
+/* ==========================
+Section Titles
+========================== */
+
+section{
+
+padding:80px 0;
+
+}
+
+section h2{
+
+text-align:center;
+
+font-size:2.3rem;
+
+margin-bottom:50px;
+
+color:#0F172A;
+
+position:relative;
+
+}
+
+section h2::after{
+
+content:"";
+
+width:80px;
+
+height:4px;
+
+background:#2563EB;
+
+display:block;
+
+margin:15px auto;
+
+border-radius:5px;
+
+}
+
+/* ===================================
+   ABOUT SECTION
+=================================== */
+
+.about{
+
+background:white;
+
+}
+
+.about p{
+
+max-width:850px;
+
+margin:0 auto 25px;
+
+font-size:1.05rem;
+
+color:#475569;
+
+text-align:center;
+
+}
+
+
+
+/* ===================================
+   SKILLS
+=================================== */
+
+.skills{
+
+background:#F1F5F9;
+
+}
+
+.skills-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:30px;
+
+}
+
+.skill-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.35s;
+
+text-align:center;
+
+}
+
+.skill-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 18px 40px rgba(37,99,235,.18);
+
+}
+
+.skill-card i{
+
+font-size:3rem;
+
+color:#2563EB;
+
+margin-bottom:20px;
+
+}
+
+.skill-card h3{
+
+margin-bottom:8px;
+
+font-size:1.4rem;
+
+}
+
+.skill-card p{
+
+color:#64748B;
+
+margin-bottom:20px;
+
+font-weight:600;
+
+}
+
+.skill-card ul{
+
+list-style:none;
+
+}
+
+.skill-card li{
+
+padding:8px 0;
+
+border-bottom:1px solid #E2E8F0;
+
+color:#475569;
+
+}
+
+.skill-card li:last-child{
+
+border-bottom:none;
+
+}
+
+
+
+/* ===================================
+   FEATURED PROJECT
+=================================== */
+
+.projects{
+
+background:white;
+
+}
+
+.project-card{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.project-image img{
+
+width:100%;
+
+border-radius:18px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+transition:.4s;
+
+}
+
+.project-image img:hover{
+
+transform:scale(1.02);
+
+}
+
+.project-content h3{
+
+font-size:2rem;
+
+margin-bottom:10px;
+
+color:#0F172A;
+
+}
+
+.project-date{
+
+display:inline-block;
+
+margin-bottom:25px;
+
+padding:8px 18px;
+
+background:#DBEAFE;
+
+color:#1D4ED8;
+
+border-radius:30px;
+
+font-weight:600;
+
+}
+
+.project-content h4{
+
+margin-top:30px;
+
+margin-bottom:15px;
+
+color:#1E3A8A;
+
+font-size:1.2rem;
+
+}
+
+.project-content p{
+
+margin-bottom:18px;
+
+color:#475569;
+
+}
+
+
+
+/* ===================================
+   PROJECT OVERVIEW
+=================================== */
+
+.overview-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:25px;
+
+}
+
+.overview-box{
+
+background:#EFF6FF;
+
+padding:25px;
+
+border-radius:15px;
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.overview-box:hover{
+
+background:#DBEAFE;
+
+transform:translateY(-4px);
+
+}
+
+.overview-box h3{
+
+font-size:2rem;
+
+color:#2563EB;
+
+margin-bottom:10px;
+
+}
+
+.overview-box p{
+
+margin:0;
+
+font-size:.95rem;
+
+color:#475569;
+
+}
+
+
+
+/* ===================================
+   TECHNOLOGIES
+=================================== */
+
+.tools{
+
+background:#F8FAFC;
+
+}
+
+.tools-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:30px;
+
+}
+
+.tool{
+
+background:white;
+
+padding:35px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.tool:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.tool i{
+
+font-size:3rem;
+
+color:#2563EB;
+
+margin-bottom:20px;
+
+}
+
+.tool h3{
+
+margin-bottom:15px;
+
+font-size:1.4rem;
+
+}
+
+.tool p{
+
+color:#64748B;
+
+}
+
+/* ===================================
+   KEY FINDINGS
+=================================== */
+
+.findings {
+    background: white;
+}
+
+.findings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.finding {
+    background: #F8FAFC;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: .35s;
+    border-top: 5px solid #2563EB;
+}
+
+.finding:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(37,99,235,.18);
+}
+
+.finding h3 {
+    margin-bottom: 20px;
+    color: #0F172A;
+}
+
+.finding strong {
+    color: #2563EB;
+    font-size: 1.2rem;
+}
+
+/* ===================================
+   CURRENTLY LEARNING
+=================================== */
+
+.learning {
+    background: #F1F5F9;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+}
+
+.learning-grid div {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    color: #334155;
+    box-shadow: 0 8px 20px rgba(0,0,0,.06);
+    transition: .3s;
+}
+
+.learning-grid div:hover {
+    background: #2563EB;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* ===================================
+   CONTACT
+=================================== */
+
+.contact {
+    background: #0F172A;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact h2::after {
+    background: #38BDF8;
+}
+
+.contact p {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+    color: #CBD5E1;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-buttons a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #2563EB;
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 40px;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.contact-buttons a:hover {
+    background: white;
+    color: #0F172A;
+    transform: translateY(-5px);
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer {
+    background: #020617;
+    color: #94A3B8;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+/* ===================================
+   ANIMATIONS
+=================================== */
+
+.skill-card,
+.tool,
+.finding,
+.stat,
+.project-card,
+.overview-box {
+    animation: fadeUp .8s ease both;
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* ===================================
+   SCROLLBAR
+=================================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E2E8F0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2563EB;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1D4ED8;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width:900px){
+
+.hero{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+gap:50px;
+
+}
+
+.hero-image{
+
+order:-1;
+
+}
+
+.hero-image img{
+
+width:260px;
+
+height:260px;
+
+}
+
+.project-card{
+
+grid-template-columns:1fr;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.nav-links{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:2.5rem;
+
+}
+
+.hero h2{
+
+font-size:1.3rem;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.contact-buttons{
+
+flex-direction:column;
+
+}
+
+.overview-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
